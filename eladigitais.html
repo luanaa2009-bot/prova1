@@ -6,27 +6,81 @@
     <title>ElasDigitais</title>
 </head>
 <style>
+    .body{
+        height:100%;
+        margin:0;
+    }
+
+    .espaço{
+         max-width: 1200px;
+            width: 85%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+    }
+
+    .fundo{
+        background-color: rgb(225, 180, 225);
+    }
+
     .container{
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-    }
+        gap: 0px;
 
-    #subtitulo {
+        #titulo{
+            font-size: 32px;   
+            margin:0;
+            line-height:1,5}
+
+        #subtitulo {
         font-size: 12px;
+        color: gray;
+        margin:0;
+        line-height:3}
     }
 
-</style>
-<body>
-    <div class="container">
-    <img src=".\img\logoElas.png" alt="Logo Elas Digitais" width="125" height="100">
-       <H1>ELAS DIGITAIS</H1>
-       <p><span id="subtitulo">PROJETO DE PESQUISA E EXTENSÃO – IFSC CÂMPUS GASPAR</span></p>
-    </div>
-    
+    #cabeçalho{
+            display: flex;
+            border-collapse: collapse;
+            padding: 0px;
+            list-style: none;
+            justify-content: space-evenly;
+            margin: 20px;
+            background-color: rgb(167, 95, 190);
+        }
+
+    #cabeçalho, td{
+        border-collapse: separate;
+        border-spacing: 50px 17px;
+            padding: 8px, 16px;
+            text-align: center;
+            font-size: 28px;
+            color: white;
+        }
 
     
+</style>
+
+<body>
+    <section class="fundo">
+    <section class="espaço">
+    <!-- Logo -->
+    <div class="container">
+    <img src=".\img\logoElas.png" alt="Logo Elas Digitais" width="175" height="125">
+       <span id="titulo">ELAS DIGITAIS</span>
+       <span id="subtitulo">- PROJETO DE PESQUISA E EXTENSÃO – IFSC CÂMPUS GASPAR -</span>
+    </div>
+
+    <table id="cabeçalho">
+        <tr><td>Inicial</td><td>|</td><td>Sobre</td><td>|</td><td>Equipe</td><td>|</td><td>Dúvidas</td><td>|</td><td>Material</td></tr>
+    </table>
+    
+
+    </section>
+    </section>
 </body>
 </html>
