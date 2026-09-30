@@ -6,21 +6,28 @@
     <title>ElasDigitais</title>
 </head>
 <style>
-    .body{
+    @media (max-width: 1200px){body{
         height:100%;
         margin:0;
+    }}
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        min-height: 50vh;
+        margin: 0;
+    }
+
+    .barra-lateral {
+        background-color: rgb(221, 180, 225);
     }
 
     .espaço{
-         max-width: 1200px;
-            width: 85%;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: white;
-    }
-
-    .fundo{
-        background-color: rgb(225, 180, 225);
+        display:grid;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        background-color: white;
     }
 
     .container{
@@ -30,6 +37,7 @@
         align-items: center;
         flex-direction: column;
         gap: 0px;
+        padding-top: 20px;
 
         #titulo{
             font-size: 32px;   
@@ -63,11 +71,18 @@
             text-decoration: none;
         }
 
+    .contato, :is(a, p)#contato{
+        color: rgb(182, 30, 174);
+        font-size: 18px;
+    }
+
     
 </style>
 
 <body>
-    <section class="fundo">
+
+    <aside class="barra-lateral"></aside>
+
     <section class="espaço">
     <!-- Logo -->
     <div class="container">
@@ -85,9 +100,40 @@
         <td><a href="Material.html">Material</a></td>
     </tr>
     </table>
-    
+
+    <h2>Objetivos</h2>
+    <p>O <strong>ELAS DIGITAIS</strong> tem como propósito incentivar a participação de meninas e mulheres nas áreas de Ciência, Tecnologia, Engenharia e Matemática (STEM), contribuindo para a redução das desigualdades de gênero nesses espaços.
+</p>
+    <ul>
+    <li><p>Incentivar meninas e mulheres a conhecerem as possibilidades da área de tecnologia;</p></li>
+    <li><p>Promover o interesse pela ciência, pesquisa e inovação;</p></li>
+    <li><p>Desenvolver conhecimentos e habilidades relacionadas ao mundo digital;</p></li>
+    <li><p>Criar espaços de aprendizado, diálogo e troca de experiências;</p></li>
+    <li><p>Dar visibilidade às mulheres que atuam nas áreas de ciência e tecnologia;</p></li>
+    <li><p>Estimular a participação</p></li>
+    <li><p>Participação feminina em ambientes acadêmicos e profissionais relacionados à tecnologia.Pesquisa</p></li>
+    </ul>
+
+    <h2>Pesquisa</h2>
+    <P>A pesquisa é uma das bases do <strong>ELAS DIGITAIS.</strong></P>
+    <p>Por meio de estudos e levantamento de informações, o projeto busca compreender a participação feminina na área de tecnologia, identificar desafios e conhecer as experiências de meninas e mulheres nesse contexto.</p>
+    <p>Os resultados das pesquisas ajudam a ampliar o conhecimento sobre a temática e contribuem para o desenvolvimento de ações mais próximas das necessidades da comunidade.</p>
+
+    <h2>Extensão</h2>
+    <P>A extensão aproxima o conhecimento produzido no Instituto Federal da comunidade.</P>
+    <p>No <strong>ELAS DIGITAIS.</strong>, essa aproximação acontece por meio de atividades, oficinas, encontros, ações educativas e produção de conteúdos que incentivam meninas e mulheres a conhecerem e se aproximarem da tecnologia</p>
+    <p>Dessa forma, o projeto busca construir uma ponte entre instituição, comunidade, ciência e tecnologia, compartilhando conhecimentos e criando oportunidades de participação.</p>
+
+    <h2>Como Participar?</h2>
+    <P>Quer fazer parte do <trong>ELAS DIGITAIS?</trong></P>
+    <p>Você pode acompanhar nossas atividades, participar das ações promovidas pelo projeto e ficar por dentro das oportunidades divulgadas pela equipe.</p>
+    <p>O projeto é construído de forma colaborativa e valoriza a participação, as ideias e as experiências de todas as pessoas envolvidas.</p>
+    <h3>Acompanhe nossas atividades e venha fazer parte dessa rede!</h3>
+
 
     </section>
-    </section>
+
+    <aside class="barra-lateral"></aside>
+
 </body>
 </html>
