@@ -11,15 +11,30 @@
         margin:0;
     }}
 
+    :root{
+        --cor: rgb(222, 180, 225);
+        --cor-texto: rgb(182, 30, 174);
+        --margem: 0px;
+    }
+
+    #anim, #contato{
+        display: inline-block;
+        transition: transform 0.25s ease;
+    }
+
+    #anim:hover, #contato:hover{
+        transform: scale(1.25);
+    }
+
     body {
         display: grid;
         grid-template-columns: 1fr 4fr 1fr;
         min-height: 50vh;
-        margin: 0;
+        margin: var(--margem);
     }
 
     .barra-lateral {
-        background-color: rgb(221, 180, 225);
+        background-color: var(--cor);
     }
 
     .espaço{
@@ -41,13 +56,13 @@
 
         #titulo{
             font-size: 32px;   
-            margin:0;
+            margin: var(--margem);
             line-height:1,5}
 
         #subtitulo {
         font-size: 12px;
         color: gray;
-        margin:0;
+        margin: var(--margem);
         line-height:3}
     }
 
@@ -72,8 +87,14 @@
         }
 
     .contato, :is(a, p)#contato{
-        color: rgb(182, 30, 174);
+        color: var(--cor-texto);
         font-size: 18px;
+    }
+
+    #Elas{
+        font-weight: bold;
+        text-shadow: 1px 1px var(--cor);
+        color: var(--cor-texto);
     }
 
     
@@ -93,43 +114,48 @@
 
     <table id="cabeçalho">
     <tr>
-        <td><a href="Inicial.html">Inicial</a></td><td>|</td>
-        <td><a href="Sobre.html">Sobre</a></td><td>|</td>
-        <td><a href="Equipe.html">Equipe</a></td><td>|</td>
-        <td><a href="Duvidas.html">Dúvidas</a></td><td>|</td>
-        <td><a href="Material.html">Material</a></td>
+        <td><a id="anim" href="Inicial.html">Inicial</a></td><td>|</td>
+        <td><a id="anim" href="Sobre.html">Sobre</a></td><td>|</td>
+        <td><a id="anim" href="Equipe.html">Equipe</a></td><td>|</td>
+        <td><a id="anim" href="Duvidas.html">Dúvidas</a></td><td>|</td>
+        <td><a id="anim" href="Material.html">Material</a></td>
     </tr>
     </table>
 
     <h2>Objetivos</h2>
-    <p>O <strong>ELAS DIGITAIS</strong> tem como propósito incentivar a participação de meninas e mulheres nas áreas de Ciência, Tecnologia, Engenharia e Matemática (STEM), contribuindo para a redução das desigualdades de gênero nesses espaços.
-</p>
+    <p>O <span id="Elas">ELAS DIGITAIS</span> tem como propósito incentivar a participação de meninas e mulheres nas áreas de Ciência, 
+        Tecnologia, Engenharia e Matemática (STEM), contribuindo para a redução das desigualdades de gênero nesses espaços.<br>
+        Entre os principais objetivos estão:
+    </p>
     <ul>
-    <li><p>Incentivar meninas e mulheres a conhecerem as possibilidades da área de tecnologia;</p></li>
-    <li><p>Promover o interesse pela ciência, pesquisa e inovação;</p></li>
-    <li><p>Desenvolver conhecimentos e habilidades relacionadas ao mundo digital;</p></li>
-    <li><p>Criar espaços de aprendizado, diálogo e troca de experiências;</p></li>
-    <li><p>Dar visibilidade às mulheres que atuam nas áreas de ciência e tecnologia;</p></li>
-    <li><p>Estimular a participação</p></li>
-    <li><p>Participação feminina em ambientes acadêmicos e profissionais relacionados à tecnologia.Pesquisa</p></li>
+        <li>Incentivar meninas e mulheres a conhecerem as possibilidades da área de tecnologia;</li>
+        <li>Promover o interesse pela ciência, pesquisa e inovação;</li>
+        <li>Desenvolver conhecimentos e habilidades relacionadas ao mundo digital;</li>
+        <li>Criar espaços de aprendizado, diálogo e troca de experiências;</li>
+        <li>Dar visibilidade às mulheres que atuam nas áreas de ciência e tecnologia;</li>
+        <li>Estimular a participação feminina em ambientes acadêmicos e profissionais relacionados à tecnologia.</li>
+</li>
     </ul>
 
-    <h2>Pesquisa</h2>
-    <P>A pesquisa é uma das bases do <strong>ELAS DIGITAIS.</strong></P>
-    <p>Por meio de estudos e levantamento de informações, o projeto busca compreender a participação feminina na área de tecnologia, identificar desafios e conhecer as experiências de meninas e mulheres nesse contexto.</p>
-    <p>Os resultados das pesquisas ajudam a ampliar o conhecimento sobre a temática e contribuem para o desenvolvimento de ações mais próximas das necessidades da comunidade.</p>
+    <h2>Como Ajudar?</h2>
+    <p>Você também pode fazer parte dessa transformação!
+Existem diferentes formas de contribuir com o <span id="Elas">ELAS DIGITAIS:</span> participando das atividades, divulgando o projeto, compartilhando nossos materiais ou apoiando iniciativas que incentivem a presença feminina na ciência, tecnologia e inovação.
+Conhecimento se multiplica quando é compartilhado. Ajude a ampliar essa rede e incentive mais meninas e mulheres a conhecerem e explorarem o mundo da tecnologia.
+</p>
 
-    <h2>Extensão</h2>
-    <P>A extensão aproxima o conhecimento produzido no Instituto Federal da comunidade.</P>
-    <p>No <strong>ELAS DIGITAIS.</strong>, essa aproximação acontece por meio de atividades, oficinas, encontros, ações educativas e produção de conteúdos que incentivam meninas e mulheres a conhecerem e se aproximarem da tecnologia</p>
-    <p>Dessa forma, o projeto busca construir uma ponte entre instituição, comunidade, ciência e tecnologia, compartilhando conhecimentos e criando oportunidades de participação.</p>
+    <h2>Contato</h2>
+    <p>Quer saber mais sobre o projeto, participar das atividades ou conversar com a equipe?
+Entre em contato com o <span id="Elas">ELAS DIGITAIS</span> e acompanhe nossas ações, pesquisas, eventos e materiais.
+</p>
+ 
+  <div class="contato">
+<p><a id="contato" href="mailto:elasdigitaisifsc@gmail.com">elasdigitaisifsc@gmail.com</a></p>
+<p><a id="contato" href="tel:4733183719">(47) 3318 – 3719</a></p>
+</div>
 
-    <h2>Como Participar?</h2>
-    <P>Quer fazer parte do <trong>ELAS DIGITAIS?</trong></P>
-    <p>Você pode acompanhar nossas atividades, participar das ações promovidas pelo projeto e ficar por dentro das oportunidades divulgadas pela equipe.</p>
-    <p>O projeto é construído de forma colaborativa e valoriza a participação, as ideias e as experiências de todas as pessoas envolvidas.</p>
-    <h3>Acompanhe nossas atividades e venha fazer parte dessa rede!</h3>
-
+  <h2>Siga nos nas redes sociais</h2>
+  <p><a id="contato" href="https://www.instagram.com/elasdigitais/"> Link do nosso Instagram</a></p>
+  <p><a id="contato" href="https://www.facebook.com/elasdigitais/"> Link do nosso facebook</a></p>
 
     </section>
 
