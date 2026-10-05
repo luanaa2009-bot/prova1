@@ -1,0 +1,239 @@
+
+   @media (max-width: 1200px) {
+    body {
+        height: 100%;
+        margin: 0;
+    }
+}
+
+    :root{
+        --cor: rgb(222, 180, 225);
+        --cor-texto: rgb(182, 30, 174);
+        --margem: 0px;
+    }
+
+    #anim, #contato{
+        display: inline-block;
+        transition: transform 0.25s ease;
+        margin-top: 0.10;
+        margin-bottom: 0.11;
+    }
+
+    #anim:hover, #contato:hover{
+        transform: scale(1.25);
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        min-height: 50vh;
+        margin: var(--margem);
+    }
+
+    .barra-lateral {
+        background-color: var(--cor);
+    }
+
+    .espaço{
+        display:grid;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 50px auto;
+        box-sizing: border-box;
+        background-color: white;
+    }
+
+    .container{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0px;
+        padding-top: 20px;
+
+        #titulo{
+            font-size: 32px;   
+            margin: var(--margem);
+            line-height:1,5}
+
+        #subtitulo {
+        font-size: 12px;
+        color: gray;
+        margin: var(--margem);
+        line-height:3}
+    }
+
+    #cabeçalho{
+            display: flex;
+            border-collapse: collapse;
+            padding: 0px;
+            list-style: none;
+            justify-content: space-evenly;
+            margin: 20px;
+            background-color: rgb(167, 95, 190);
+        }
+
+    #cabeçalho, td, a{
+        border-collapse: separate;
+        border-spacing: 50px 17px;
+            padding: 8px, 16px;
+            text-align: center;
+            font-size: 28px;
+            color: white;
+            text-decoration: none;
+        }
+
+    .contato, :is(a, p)#contato{
+        color: var(--cor-texto);
+        font-size: 18px;
+        margin-top: 2px 0;
+    }
+
+    #Elas{
+        font-weight: bold;
+        text-shadow: 1px 1px var(--cor);
+        color: var(--cor-texto);
+    }
+
+    .video-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    }
+
+    .legenda {
+    width: 400px;
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 1.5;
+    }
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+    margin-left: 30px; 
+    margin-right: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 0.25;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#Preto{
+    color: black;
+}
+
+#Pesquisadores{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.texto-pesquisador {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* RESPONSIVIDADE PARA CELULAR */
+@media (max-width: 600px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0;
+        width: 100%;
+    }
+
+    /* Esconde as barras lilás no celular */
+    .barra-lateral {
+        display: none;
+    }
+
+    /* Área principal */
+    .espaço {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    /* Logo e título */
+    .container {
+        width: 100%;
+        padding-top: 15px;
+    }
+
+    .container img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #titulo {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    #subtitulo {
+        font-size: 9px;
+        text-align: center;
+    }
+
+    /* Barra de navegação */
+    #cabeçalho {
+        width: 100%;
+        margin: 15px 0;
+        box-sizing: border-box;
+        overflow-x: auto;
+    }
+
+    #cabeçalho td,
+    #cabeçalho a {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    /* Títulos */
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 22px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Textos */
+    p {
+        font-size: 16px;
+        margin-left: 0;
+        margin-right: 0;
+        line-height: 1.4;
+    }
+
+    /* Texto dos pesquisadores */
+    .texto-pesquisador {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    #Pesquisadores {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    /* Imagens dos pesquisadores */
+    .container img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Links */
+    #contato {
+        font-size: 16px;
+    }
+
+}

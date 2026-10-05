@@ -3,102 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>ElasDigitais</title>
 </head>
-<style>
-    @media (max-width: 1200px){body{
-        height:100%;
-        margin:0;
-    }}
-
-    :root{
-        --cor: rgb(222, 180, 225);
-        --cor-texto: rgb(182, 30, 174);
-        --margem: 0px;
-    }
-
-    #anim, #contato{
-        display: inline-block;
-        transition: transform 0.25s ease;
-    }
-
-    #anim:hover, #contato:hover{
-        transform: scale(1.25);
-    }
-
-    body {
-        display: grid;
-        grid-template-columns: 1fr 4fr 1fr;
-        min-height: 50vh;
-        margin: var(--margem);
-    }
-
-    .barra-lateral {
-        background-color: var(--cor);
-    }
-
-    .espaço{
-        display:grid;
-        max-width: 1200px;
-        width: 100%;
-        margin: 0 auto;
-        background-color: white;
-    }
-
-    .container{
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 0px;
-        padding-top: 20px;
-
-        #titulo{
-            font-size: 32px;   
-            margin: var(--margem);
-            line-height:1,5}
-
-        #subtitulo {
-        font-size: 12px;
-        color: gray;
-        margin: var(--margem);
-        line-height:3}
-    }
-
-    #cabeçalho{
-            display: flex;
-            border-collapse: collapse;
-            padding: 0px;
-            list-style: none;
-            justify-content: space-evenly;
-            margin: 20px;
-            background-color: rgb(167, 95, 190);
-        }
-
-    #cabeçalho, td, a{
-        border-collapse: separate;
-        border-spacing: 50px 17px;
-            padding: 8px, 16px;
-            text-align: center;
-            font-size: 28px;
-            color: white;
-            text-decoration: none;
-        }
-
-    .contato, :is(a, p)#contato{
-        color: var(--cor-texto);
-        font-size: 18px;
-    }
-
-    #Elas{
-        font-weight: bold;
-        text-shadow: 1px 1px var(--cor);
-        color: var(--cor-texto);
-    }
-
-    
-</style>
 
 <body>
 
@@ -142,13 +49,13 @@ Entre em contato com o <span id="Elas">ELAS DIGITAIS</span> e acompanhe nossas a
   <div class="contato">
 <p><a id="contato" href="mailto:elasdigitaisifsc@gmail.com">elasdigitaisifsc@gmail.com</a></p>
 <p><a id="contato" href="tel:4733183719">(47) 3318 – 3719</a></p>
-</div>
 
-  <h2>Siga nos nas redes sociais</h2>
+
+  <h2 id="Preto">Siga nos nas redes sociais</h2>
   <p><a id="contato" href="https://www.instagram.com/elasdigitais/"> Link do nosso Instagram</a></p>
   <p><a id="contato" href="https://www.facebook.com/elasdigitais/"> Link do nosso facebook</a></p>
 
-    </section>
+    </section></div>
 
     <aside class="barra-lateral"></aside>
 

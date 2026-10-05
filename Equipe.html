@@ -3,102 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>ElasDigitais</title>
 </head>
-<style>
-    @media (max-width: 1200px){body{
-        height:100%;
-        margin:0;
-    }}
-
-    :root{
-        --cor: rgb(222, 180, 225);
-        --cor-texto: rgb(182, 30, 174);
-        --margem: 0px;
-    }
-
-    #anim, #contato{
-        display: inline-block;
-        transition: transform 0.25s ease;
-    }
-
-    #anim:hover, #contato:hover{
-        transform: scale(1.25);
-    }
-
-    body {
-        display: grid;
-        grid-template-columns: 1fr 4fr 1fr;
-        min-height: 50vh;
-        margin: var(--margem);
-    }
-
-    .barra-lateral {
-        background-color: var(--cor);
-    }
-
-    .espaço{
-        display:grid;
-        max-width: 1200px;
-        width: 100%;
-        margin: 0 auto;
-        background-color: white;
-    }
-
-    .container{
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 0px;
-        padding-top: 20px;
-
-        #titulo{
-            font-size: 32px;   
-            margin: var(--margem);
-            line-height:1,5}
-
-        #subtitulo {
-        font-size: 12px;
-        color: gray;
-        margin: var(--margem);
-        line-height:3}
-    }
-
-    #cabeçalho{
-            display: flex;
-            border-collapse: collapse;
-            padding: 0px;
-            list-style: none;
-            justify-content: space-evenly;
-            margin: 20px;
-            background-color: rgb(167, 95, 190);
-        }
-
-    #cabeçalho, td, a{
-        border-collapse: separate;
-        border-spacing: 50px 17px;
-            padding: 8px, 16px;
-            text-align: center;
-            font-size: 28px;
-            color: white;
-            text-decoration: none;
-        }
-
-    .contato, :is(a, p)#contato{
-        color: var(--cor-texto);
-        font-size: 18px;
-    }
-
-    #Elas{
-        font-weight: bold;
-        text-shadow: 1px 1px var(--cor);
-        color: var(--cor-texto);
-    }
-
-    
-</style>
 
 <body>
 
@@ -138,16 +45,48 @@ Conhecimento se multiplica quando é compartilhado. Ajude a ampliar essa rede e 
     <p>Quer saber mais sobre o projeto, participar das atividades ou conversar com a equipe?
 Entre em contato com o <span id="Elas">ELAS DIGITAIS</span> e acompanhe nossas ações, pesquisas, eventos e materiais.
 </p>
- 
-  <div class="contato">
+
+<div class="contato">
 <p><a id="contato" href="mailto:elasdigitaisifsc@gmail.com">elasdigitaisifsc@gmail.com</a></p>
 <p><a id="contato" href="tel:4733183719">(47) 3318 – 3719</a></p>
-</div>
 
-  <h2>Siga nos nas redes sociais</h2>
+  <h2 id="Preto">Siga nos nas redes sociais</h2>
   <p><a id="contato" href="https://www.instagram.com/elasdigitais/"> Link do nosso Instagram</a></p>
   <p><a id="contato" href="https://www.facebook.com/elasdigitais/"> Link do nosso facebook</a></p>
+</div>
 
+    <h2>Pesquisadores</h2>
+
+<div class="container">
+    <img src=".\img\carol.jpg" alt="Carol" width="150" height="200">
+
+    <p><span id = "Pesquisadores"> Caroline Reis V. S. Rauta - Professora de Língua Portuguesa no Instituto Federal de Santa Catarina</span></p>
+
+    <p class="texto-pesquisador">Caroline Reis Vieira Santos Rauta é professora de Língua Portuguesa do IFSC – Câmpus Gaspar. É doutora e mestre em Estudos da Tradução pela UFSC, com período de doutorado na Universidade de Birmingham, no Reino Unido. Também é graduada em Língua e Literatura Vernáculas pela UFSC.</p>
+    <p><a id="contato" href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do"> Currículo Caroline</a></p>
+    <p></p>
+
+    <img src=".\img\daniela.jpg" alt="daniela" width="150" height="200">
+
+    <p><span id = "Pesquisadores">Pesquisadora Daniela Sbizera Justo - Professora de Banco de Dados no Instituto Federal de Santa Catarina</span></p>
+
+    <p class="texto-pesquisador">Possui graduação e mestrado em Ciência da Computação pela USP e doutorado em Engenharia Elétrica pela UNESP. Tem experiência em Ciência da Computação, com atuação em Banco de Dados e Engenharia de Software. Também atua como professora e no desenvolvimento e análise de sistemas, com interesse em Banco de Dados, Engenharia de Software e Aprendizado de Máquina.</p>
+    <p><a id="contato" href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do"> Currículo Daniela</a></p>
+    <p></p>
+
+    <img src=".\img\maykon.jpg" alt="maykon" width="150" height="200">
+
+    <p><span id = "Pesquisadores">Maykon Chagas de Souza - Professor de Introdução á Lógica da Programação no Instituto Federal de Santa Catarina</span></p>
+       
+    <p class="texto-pesquisador">Possui mestrado em Computação Aplicada pela UNIVALI e graduação em Computação e Sistemas de Telecomunicações pelo Claretiano e IFSC. Tem experiência em Ciência da Computação e Redes de Computadores, com atuação em redes, segurança de sistemas, administração de sistemas GNU/Linux, sistemas distribuídos e telecomunicações.</p>
+    <p><a id="contato" href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do"> Currículo Maykon</a></p>
+    <p></p>
+    
+    </div>
+
+    <p></p>
+ 
+ 
     </section>
 
     <aside class="barra-lateral"></aside>
